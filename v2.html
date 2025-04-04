@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Isick for Lee College Board of Regents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        .platform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">David Isick</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
+                    <a href="#platform" class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Platform</a>
+                    <a href="#about" class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">About</a>
+                    <a href="#endorsements" class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Endorsements</a>
+                    <a href="#contact" class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
+                    <a href="#donate" class="ml-8 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700">Donate</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#home" class="block pl-3 pr-4 py-2 border-l-4 border-blue-500 text-base font-medium text-blue-700 bg-blue-50">Home</a>
+                <a href="#platform" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Platform</a>
+                <a href="#about" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">About</a>
+                <a href="#endorsements" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Endorsements</a>
+                <a href="#contact" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Contact</a>
+                <a href="#donate" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">"Transparency. Tax Relief. Opportunity."</h1>
+                    <p class="text-xl mb-8">A Lee College That Works for Taxpayers & Students</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#donate" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-gray-100">Donate Now</a>
+                        <a href="#volunteer" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-500 bg-opacity-60 hover:bg-opacity-70">Volunteer</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative w-full h-64 md:h-96 bg-white rounded-lg shadow-xl overflow-hidden">
+                        <div class="absolute inset-0 bg-blue-400 opacity-20"></div>
+                        <div class="relative h-full flex items-center justify-center">
+                            <i class="fas fa-university text-blue-600 text-6xl md:text-8xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Join me in making Lee College more accountable, affordable, and connected to our community.</h2>
+                <p class="text-lg text-gray-600 mb-8">Your voice matters—let's build a brighter future together!</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#donate" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                        <i class="fas fa-hand-holding-usd mr-2"></i> Donate
+                    </a>
+                    <a href="#volunteer" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-gray-50">
+                        <i class="fas fa-hands-helping mr-2"></i> Volunteer
+                    </a>
+                    <a href="#platform" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-gray-50">
+                        <i class="fas fa-info-circle mr-2"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section id="platform" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">My Platform</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Three key priorities for a better Lee College and Baytown community</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Transparency Card -->
+                <div class="platform-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+                                <i class="fas fa-eye text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-lg font-medium text-gray-900">Transparency & Accountability</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Push for video-recorded board meetings and public access to committee meetings</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Establish city-wide listening sessions like City Hall</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Create an ethics committee to ensure proper oversight</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Monthly public broadcasts of key decisions and discussions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tax Relief Card -->
+                <div class="platform-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+                                <i class="fas fa-hand-holding-usd text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-lg font-medium text-gray-900">Tax Relief</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Oppose unnecessary tax increases (voted against the 1.25% increase)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Use college surplus funds to offer tax relief to residents</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Promote international student enrollment to generate revenue</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Responsible budgeting to prevent unnecessary tuition or tax hikes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Student Opportunities Card -->
+                <div class="platform-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+                                <i class="fas fa-user-graduate text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-lg font-medium text-gray-900">Student Opportunities</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Increase student services spending (currently only 4% of budget)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Update student government funding (stagnant since 2006)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Reinstate the Student Leadership Council for direct student input</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Support entrepreneurship programs and faculty research</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About David Isick</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        A dedicated community advocate, business owner, and Lee College graduate running to bring transparency, tax relief, and student opportunities to the Lee College Board of Regents.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-100 text-blue-600">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Community Advocate</h3>
+                                <p class="text-gray-600">
+                                    Successfully advocated for the reinstatement of Baytown's ethics commission after a four-year battle.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-100 text-blue-600">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Taxpayer Champion</h3>
+                                <p class="text-gray-600">
+                                    Helped recover $3.25 million for taxpayers from a faulty contract with the San Jacinto Mall.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-100 text-blue-600">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Education Focused</h3>
+                                <p class="text-gray-600">
+                                    Lee College graduate with a Certificate of Leadership in the Public Sector from UHCL.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-100 text-blue-600">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Global Perspective</h3>
+                                <p class="text-gray-600">
+                                    Speaks Japanese and has international business experience to attract global opportunities for Lee College.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative w-full h-96 bg-white rounded-lg shadow-xl overflow-hidden">
+                        <div class="absolute inset-0 bg-blue-400 opacity-10"></div>
+                        <div class="relative h-full flex items-center justify-center">
+                            <i class="fas fa-user text-blue-600 text-6xl md:text-8xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Statement -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <i class="fas fa-quote-left text-blue-300 text-4xl mb-6"></i>
+                <blockquote class="text-xl md:text-2xl font-medium mb-8 max-w-4xl mx-auto">
+                    "I am running for the Lee College Board of Regents because I believe that transparency, accountability, and growth should define our college and community. My vision is to create a Lee College that not only listens to its students and taxpayers but acts in their best interests."
+                </blockquote>
+                <p class="text-lg font-bold">- David Isick</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Endorsements Section -->
+    <section id="endorsements" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Endorsements & Testimonials</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">What community leaders, educators, and residents are saying</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Community Leaders -->
+                <div class="testimonial-card bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Community Leaders</h3>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "David Isick is exactly the leader Lee College needs—someone who listens, takes action, and fights for transparency."
+                    </blockquote>
+                    <p class="text-sm text-gray-500">- Local Business Leader</p>
+                </div>
+                
+                <!-- Educators -->
+                <div class="testimonial-card bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Educators</h3>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "His commitment to students and the Baytown community is unmatched."
+                    </blockquote>
+                    <p class="text-sm text-gray-500">- Lee College Faculty Member</p>
+                </div>
+                
+                <!-- Students -->
+                <div class="testimonial-card bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Students & Alumni</h3>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "As a former student, I wish we had someone like David on the board years ago. He genuinely cares about our success."
+                    </blockquote>
+                    <p class="text-sm text-gray-500">- Lee College Graduate</p>
+                </div>
+                
+                <!-- Current Students -->
+                <div class="testimonial-card bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Current Students</h3>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "David understands the struggles students face and is working to make college more accessible for everyone."
+                    </blockquote>
+                    <p class="text-sm text-gray-500">- Current Lee College Student</p>
+                </div>
+                
+                <!-- Local Residents -->
+                <div class="testimonial-card bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Local Residents</h3>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "I trust David to put our tax dollars to good use and make sure Lee College is working for the entire community."
+                    </blockquote>
+                    <p class="text-sm text-gray-500">- Baytown Resident</p>
+                </div>
+                
+                <!-- Business Community -->
+                <div class="testimonial-card bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Business Community</h3>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "We have one hell of an advocate in David Isick. He fights for what's right for our community."
+                    </blockquote>
+                    <p class="text-sm text-gray-500">- Local Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer/Donate Section -->
+    <section id="donate" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Get Involved</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Change doesn't happen alone. Join our campaign to bring transparency, tax relief, and student opportunities to Lee College.
+                    </p>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Volunteer</h3>
+                            <p class="text-gray-600 mb-4">
+                                Sign up to help with our campaign - whether it's knocking on doors, making calls, or helping at events.
+                            </p>
+                            <a href="#volunteer" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                                <i class="fas fa-hands-helping mr-2"></i> Volunteer Now
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Donate</h3>
+                            <p class="text-gray-600 mb-4">
+                                Your contribution helps us reach more voters and spread our message of reform for Lee College.
+                            </p>
+                            <a href="#donate" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                                <i class="fas fa-hand-holding-usd mr-2"></i> Donate Today
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Our Campaign</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">How can you help?</label>
+                            <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Campaign</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#platform" class="text-gray-300 hover:text-white">Platform</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="#endorsements" class="text-gray-300 hover:text-white">Endorsements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Get Involved</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#volunteer" class="text-gray-300 hover:text-white">Volunteer</a></li>
+                        <li><a href="#donate" class="text-gray-300 hover:text-white">Donate</a></li>
+                        <li><a href="#events" class="text-gray-300 hover:text-white">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Voter Information</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Lee College</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Election Dates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-300">Paid for by Friends of David Isick</p>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2023 David Isick for Lee College Board of Regents. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('block');
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('block');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('block');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
