@@ -334,15 +334,21 @@
                         <ul class="space-y-3">
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span class="font-medium">M.Ed. Educational Leadership</span>
-                                <br>
-                                <span class="text-gray-600 text-sm">State University</span>
+                                <div class="flex-1">
+                                    <span class="font-medium">Associate Degree</span>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-600 text-sm">Lee college</span>
+                                    </div>
+                                </div>
                             </li>
                             <li class="flex items-start mt-4">
                                 <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <span class="font-medium">B.A. Elementary Education</span>
-                                <br>
-                                <span class="text-gray-600 text-sm">City College</span>
+                                <div class="flex-1">
+                                    <span class="font-medium">Certificate of Leadership in the Public Sector</span>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-600 text-sm">UHCL</span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -526,16 +532,21 @@
                             <p class="mb-6">Hear directly from David about his vision for our schools and why he's running.</p>
                             <div class="flex space-x-4">
                                 <i class="fab fa-youtube text-3xl"></i>
-                                <i class="fab fa-facebook text-3xl"></i>
+                                <a href="https://www.facebook.com/share/1ALAdZ9uw5/?mibextid=wwXIf"><i class="fab fa-facebook text-3xl"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="md:w-1/2 p-10 bg-gray-100 flex items-center justify-center">
-                        <div class="relative w-full h-64 bg-black bg-opacity-10 rounded-lg flex items-center justify-center">
-                            <div class="absolute inset-0 bg-gradient-to-br from-maroon-500 to-purple-600 opacity-20 rounded-lg"></div>
-                            <button class="z-10 w-16 h-16 bg-red-500 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition">
-                                <i class="fas fa-play text-white text-xl"></i>
-                            </button>
+                        <div class="relative w-full h-64 bg-black rounded-lg overflow-hidden">
+                            <iframe 
+                                width="100%" 
+                                height="100%" 
+                                src="https://www.youtube.com/embed/Ki1SVHMeif0" 
+                                title="David Isaac Campaign Video" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -749,18 +760,6 @@
                     <i class="fas fa-donate mr-2"></i> Donate Now
                 </a>
             </div>
-            
-            <!-- Campaign Progress -->
-            <div class="mt-16 bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm max-w-2xl mx-auto">
-                <div class="mb-4 flex justify-between items-center">
-                    <h4 class="text-lg font-medium">Campaign Progress</h4>
-                    <span class="text-maroon-200 font-bold">75%</span>
-                </div>
-                <div class="w-full bg-maroon-200 rounded-lg h-4 mb-2">
-                    <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 h-4 rounded-lg" style="width: 75%"></div>
-                </div>
-                <p class="text-sm text-maroon-200">$15,000 raised of $20,000 goal</p>
-            </div>
         </div>
     </section>
 
@@ -811,16 +810,10 @@
                         <div class="pt-6">
                             <h4 class="text-lg font-semibold mb-4">Follow the Campaign</h4>
                             <div class="flex space-x-4">
-                                <a href="#" class="w-12 h-12 rounded-full bg-maroon-100 text-maroon-600 flex items-center justify-center hover:bg-maroon-200 transition shadow-sm hover:shadow-md">
+                                <a href="https://www.facebook.com/share/1ALAdZ9uw5/?mibextid=wwXIf" class="w-12 h-12 rounded-full bg-maroon-100 text-maroon-600 flex items-center justify-center hover:bg-maroon-200 transition shadow-sm hover:shadow-md">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="w-12 h-12 rounded-full bg-maroon-100 text-maroon-600 flex items-center justify-center hover:bg-maroon-200 transition shadow-sm hover:shadow-md">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="w-12 h-12 rounded-full bg-maroon-100 text-maroon-600 flex items-center justify-center hover:bg-maroon-200 transition shadow-sm hover:shadow-md">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" class="w-12 h-12 rounded-full bg-maroon-100 text-maroon-600 flex items-center justify-center hover:bg-maroon-200 transition shadow-sm hover:shadow-md">
+                                <a href="https://www.youtube.com/embed/Ki1SVHMeif0" class="w-12 h-12 rounded-full bg-maroon-100 text-maroon-600 flex items-center justify-center hover:bg-maroon-200 transition shadow-sm hover:shadow-md">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </div>
@@ -828,52 +821,6 @@
                     </div>
                 </div>
                 
-                <div class="md:w-1/2">
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
-                                <input type="text" id="first-name" name="first-name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-maroon-500 focus:border-maroon-500">
-                            </div>
-                            <div>
-                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
-                                <input type="text" id="last-name" name="last-name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-maroon-500 focus:border-maroon-500">
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-maroon-500 focus:border-maroon-500">
-                        </div>
-                        
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject *</label>
-                            <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-maroon-500 focus:border-maroon-500">
-                                <option>General Inquiry</option>
-                                <option>Volunteer Opportunities</option>
-                                <option>Media Request</option>
-                                <option>Endorsement</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
-                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-maroon-500 focus:border-maroon-500"></textarea>
-                        </div>
-                        
-                        <div class="flex items-center">
-                            <input id="newsletter" name="newsletter" type="checkbox" class="h-4 w-4 text-maroon-600 focus:ring-maroon-500 border-gray-300 rounded">
-                            <label for="newsletter" class="ml-2 block text-sm text-gray-700">
-                                Sign up for campaign updates
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-maroon-600 hover:bg-maroon-700 transition transform hover:-translate-y-1">
-                            <i class="fas fa-paper-plane mr-2"></i> Send Message
-                        </button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -891,14 +838,8 @@
                         Dedicated to excellence, equity, and engagement in District 5 schools. Help us build the future our children deserve.
                     </p>
                     <div class="mt-6 flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition">
+                        <a href="https://www.facebook.com/share/1ALAdZ9uw5/?mibextid=wwXIf" class="text-gray-400 hover:text-white transition">
                             <i class="fab fa-facebook-f text-lg"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <i class="fab fa-twitter text-lg"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
-                            <i class="fab fa-instagram text-lg"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition">
                             <i class="fab fa-youtube text-lg"></i>
