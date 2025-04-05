@@ -948,33 +948,58 @@
     </a>
 
     <script>
-        // Election Day Countdown (November 5, 2024)
+        // Election Day Countdown (May 5, 2025)
         function updateCountdown() {
-            const electionDate = new Date("May 5, 2025 20:00:00").getTime();
-            const now = new Date().getTime();
-            const distance = electionDate - now;
-            
-            if (distance < 0) {
-                document.getElementById("countdown-days").innerHTML = "00";
-                document.getElementById("countdown-hours").innerHTML = "00";
-                document.getElementById("countdown-minutes").innerHTML = "00";
-                document.getElementById("countdown-seconds").innerHTML = "00";
-                return;
+            try {
+                // More reliable date parsing
+                const electionDate = new Date(2025, 4, 5, 20, 0, 0).getTime(); // May 5, 2025 20:00:00
+                const now = new Date().getTime();
+                const distance = electionDate - now;
+                
+                // Get countdown elements
+                const daysEl = document.getElementById("countdown-days");
+                const hoursEl = document.getElementById("countdown-hours");
+                const minutesEl = document.getElementById("countdown-minutes");
+                const secondsEl = document.getElementById("countdown-seconds");
+                
+                // Check if elements exist
+                if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
+                    console.error("Countdown elements not found");
+                    return;
+                }
+                
+                if (distance < 0) {
+                    daysEl.innerHTML = "00";
+                    hoursEl.innerHTML = "00";
+                    minutesEl.innerHTML = "00";
+                    secondsEl.innerHTML = "00";
+                    return;
+                }
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                daysEl.innerHTML = days.toString().padStart(2, "0");
+                hoursEl.innerHTML = hours.toString().padStart(2, "0");
+                minutesEl.innerHTML = minutes.toString().padStart(2, "0");
+                secondsEl.innerHTML = seconds.toString().padStart(2, "0");
+            } catch (error) {
+                console.error("Error in countdown:", error);
+                // Fallback display
+                const countdownElements = document.querySelectorAll('.countdown-item');
+                countdownElements.forEach(el => {
+                    el.innerHTML = '<div class="text-2xl font-bold">--</div><div class="text-xs">Error</div>';
+                });
             }
-            
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            document.getElementById("countdown-days").innerHTML = days.toString().padStart(2, "0");
-            document.getElementById("countdown-hours").innerHTML = hours.toString().padStart(2, "0");
-            document.getElementById("countdown-minutes").innerHTML = minutes.toString().padStart(2, "0");
-            document.getElementById("countdown-seconds").innerHTML = seconds.toString().padStart(2, "0");
         }
         
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
+        // Initialize countdown when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        });
         
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
